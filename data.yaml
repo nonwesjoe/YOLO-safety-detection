@@ -1,0 +1,10 @@
+names:
+- hat
+- nohat
+- novest
+- person
+- vest
+nc: 5
+path: dataset
+train: train
+val: val

@@ -8,7 +8,8 @@ The model is built upon the [Ultralytics](https://ultralytics.com/) framework an
 - `novest`: A person not wearing a safety vest.
 - `person`: A person detected.
 - `vest`: A person wearing a safety vest.
-
+## Model download
+- Huggingface Download: [YOLO11](https://huggingface.co/wesjos/Yolo-hard-hat-safety-vest)
 ## How It Works
 
 - The `infer.py` script loads a pre-trained YOLO model (`.pt` file), performs inference on a specified input image (`test.jpg`), and saves the resulting image with bounding boxes and labels as `predicted.jpg`.
@@ -72,13 +73,13 @@ This repository is also set up for training your own model.
 
     Modify this line in `infer.py` to point to your model's location:
     ```python
-    model = YOLO(r"path/to/your/model.pt")
+    model = YOLO(r"path/to/model.pt")
     ```
 
 2.  **Prepare your input image:**
     Place the image you want to analyze in the project's root directory and name it `test.jpg`, or update the path in `infer.py`:
     ```python
-    img = r"path/to/your/image.jpg"
+    img = r"path/to/image.jpg"
     ```
 
 3.  **Run the inference script:**
